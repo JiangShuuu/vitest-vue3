@@ -7,11 +7,12 @@ describe("my-pokemon", () => {
     // arrange
     render(MyPokemon);
 
+    // act
     const pokemon = await screen.findByText("Get Pokemon");
     await fireEvent.click(pokemon);
-    const value = await screen.findByText("bulbasaur");
 
-    // asert
+    // assert
+    const value = await screen.findByText("bulbasaur");
     expect(value.innerHTML).toBe("bulbasaur");
   });
 });

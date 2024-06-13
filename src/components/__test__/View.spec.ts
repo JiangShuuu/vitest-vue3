@@ -18,12 +18,13 @@ describe("View", () => {
     })
 
     const view = await screen.findByText(viewTest)
-    // asert
+    // assert
     // expect(view.id).toBe(viewId)
     expect(view.innerHTML).toBe(viewTest)
     expect(view.nodeName).toBe("SPAN")
   })
 
+  // 快照, 對比產出 dom
   // it("snap shot matches", () => {
   //   const wrapper = render(View, {props: {element: "div"}})
   //   expect(wrapper).toMatchSnapshot()
