@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import View from "./components/View.vue";
+import View from "@/components/View.vue";
 </script>
 
 <template>
