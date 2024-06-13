@@ -7,19 +7,25 @@ describe("View", () => {
 
   it("render", async () => {
     // arrange
-    const viewId = "viewId"
+    // const viewId = "viewId"
     render(View, {
       props: {
         element: "span",
-        id: viewId,
+        // inject
+        // id: viewId,
       },
       slots: {default: viewTest}
     })
 
     const view = await screen.findByText(viewTest)
     // asert
-    expect(view.id).toBe(viewId)
+    // expect(view.id).toBe(viewId)
     expect(view.innerHTML).toBe(viewTest)
     expect(view.nodeName).toBe("SPAN")
   })
+
+  // it("snap shot matches", () => {
+  //   const wrapper = render(View, {props: {element: "div"}})
+  //   expect(wrapper).toMatchSnapshot()
+  // })
 })

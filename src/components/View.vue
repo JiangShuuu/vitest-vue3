@@ -1,7 +1,7 @@
 <template>
   <component :is="element" :aria-label="ariaLabel" :disabled="isDisabled">
-    <slot></slot
-  ></component>
+    <slot></slot>
+  </component>
 </template>
 
 <script setup lang="ts">
