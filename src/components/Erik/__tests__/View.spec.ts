@@ -1,6 +1,6 @@
 import {render, screen} from "@testing-library/vue"
 import {describe, it, expect} from "vitest"
-import View from "../View.vue"
+import View from "@/components/Erik/View.vue"
 
 describe("View", () => {
   const viewTest = "Hello from view123"

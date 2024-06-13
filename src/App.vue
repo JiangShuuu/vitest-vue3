@@ -1,25 +1,3 @@
-<script setup lang="ts">
-import View from "@/components/View.vue";
-import MyPokemon from "@/components/MyPokemon.vue";
-</script>
-
 <template>
-  <h2>Hello World</h2>
-  <View element="div">Hello from view</View>
-  <MyPokemon />
+  <router-view />
 </template>
-
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>

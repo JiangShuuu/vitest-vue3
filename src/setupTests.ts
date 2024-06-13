@@ -1,7 +1,7 @@
 import { beforeAll, afterEach, afterAll } from "vitest";
 import { http, HttpResponse } from "msw";
 import { setupServer } from "msw/node";
-import { pokemonResponse } from "@/components/__test__/mockPokemon";
+import { pokemonResponse } from "@/components/Erik/__tests__/mockPokemon";
 import "whatwg-fetch";
 
 export const restHandlers = [
