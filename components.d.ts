@@ -13,6 +13,8 @@ declare module 'vue' {
     ElForm: typeof import('element-plus/es')['ElForm']
     ElFormItem: typeof import('element-plus/es')['ElFormItem']
     ElInput: typeof import('element-plus/es')['ElInput']
+    ElOption: typeof import('element-plus/es')['ElOption']
+    ElSelect: typeof import('element-plus/es')['ElSelect']
     MyPokemon: typeof import('./src/components/Erik/MyPokemon.vue')['default']
     Origin: typeof import('./src/components/Origin/index.vue')['default']
     Parent: typeof import('./src/components/ElementForm/Parent.vue')['default']
@@ -20,6 +22,7 @@ declare module 'vue' {
     RouterView: typeof import('vue-router')['RouterView']
     SectionBlock: typeof import('./src/components/Ithome/SectionBlock.vue')['default']
     SectionBlockTitle: typeof import('./src/components/Ithome/SectionBlockTitle.vue')['default']
+    Select: typeof import('./src/components/ElementForm/Select.vue')['default']
     View: typeof import('./src/components/Erik/View.vue')['default']
   }
 }
