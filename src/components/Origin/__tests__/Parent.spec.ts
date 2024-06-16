@@ -31,12 +31,12 @@ it('should render the form and handle validation', async () => {
   expect(ageInput.element.value).toBe("25");
 
   // 提交表單
-  await submitButton.trigger('click');
+  await wrapper.find('form').trigger('submit.prevent')
 
   // 等待驗證完成
-  await new Promise((resolve) => setTimeout(resolve, 2000));
-  await flushPromises()
-  await wrapper.vm.$nextTick();
+  // await new Promise((resolve) => setTimeout(resolve, 3000));
+  // await flushPromises();
+  // await wrapper.vm.$nextTick();
 
   // 檢查結果
   expect(result.text()).toBe('success');

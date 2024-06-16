@@ -17,6 +17,11 @@ const routes = [
     component: () => import('@/views/ithome.vue'),
   },
   {
+    path: '/element',
+    name: 'Element',
+    component: () => import('@/views/element.vue'),
+  },
+  {
     path: '/:pathMatch(.*)*',
     name: 'Error',
     component: () => import('@/views/error.vue'),

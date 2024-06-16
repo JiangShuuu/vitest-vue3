@@ -3,6 +3,7 @@ import { http, HttpResponse } from "msw";
 import { setupServer } from "msw/node";
 import { pokemonResponse } from "@/components/Erik/__tests__/mockPokemon";
 import "whatwg-fetch";
+import '@testing-library/jest-dom'
 
 export const restHandlers = [
   http.get("https://pokeapi.co/api/v2/pokemon", () => {
